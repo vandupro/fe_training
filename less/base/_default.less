@@ -16,6 +16,10 @@ ul {
         list-style: none;
     }
 }
+input {
+    padding: 0;
+}
+
 //---------Grid Layout----------//
 .container {
     max-width: 1170px;
@@ -38,4 +42,28 @@ body {
     font-family: 'Poppins';
     font-size: 16px;
     font-style: normal;
+}
+.dropdown {
+    &:hover {
+        .dropdown-content {
+            display: block;
+        }
+    }
+    &-btn {
+        &::after {
+            display: inline-block;
+            content: url('../img/down-arrow.png');
+            -webkit-transform: scale(0.5);
+            -moz-transform: scale(0.5);
+            vertical-align: middle;
+            margin-left: 22px;
+        }
+
+
+    }
+    &-content {
+        display:none;
+        position: absolute;
+        background-color: @bg-header;
+    }
 }
