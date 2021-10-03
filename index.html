@@ -2,37 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Link Css -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Link Script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
     <!-- Add Fonts-->
-    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
 </head>
 
 <body>
     <div class="wrapper">
         <!-- Header -->
         <div class="header">
-
+            <img class="image-banner" src="img/banner2.jpg" alt="banner" />
+            <div class="search-input">
+                <input type="text" />
+            </div>
+            <!-- Menu -->
+            <div class="menu">
+                <div class="container">
+                    <div class="menu-inner">
+                        <div class="logo">
+                            <a href="#"><img src="img/logo.png" alt="" /></a>
+                        </div>
+                        <nav class="navbar">
+                            <div class="navbar-icon">
+                                <i class="fas fa-bars"></i>
+                                <span>NAVIGATION</span>
+                            </div>
+                            <ul>
+                                <div class="nav-title">Navigation</div>
+                                <li class="nav-item"><a href="#">Home</a></li>
+                                <li class="nav-item"><a href="#">Pages</a></li>
+                                <li class="nav-item"><a href="#">Classes</a></li>
+                                <li class="nav-item"><a href="#">Portfolio</a></li>
+                                <li class="nav-item"><a href="#">Blog</a></li>
+                                <li class="nav-item"><a href="#">Contacts</a></li>
+                            </ul>
+                        </nav>
+                        <div class="menu-icon">
+                            <div class="search-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="cart-icon">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                            </div>
+                            <div class="user-icon">
+                                <a href="#"><i class="fas fa-user"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Menu -->
+            <div class="cover"></div>
+            <div class="header-content">
+                <div class="container">
+                    <div class="header-content-inner">
+                        <div class="content1">Dumbbells Shop</div>
+                        <div class="content2">Best body fitness</div>
+                        <div class="content3">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy
+                            text ever since the 1500s, when an unknown printer
+                        </div>
+                        <a class="btn" href="#">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End Header -->
-        <!-- Menu -->
-        <div class="navbar" id="menu">
 
-        </div>
-        <!-- End Menu -->
         <!-- Main content -->
         <div class="main-content">
-            <!-- Slider -->
-            <div class="slider">
-
-            </div>
-            <!-- End Slider -->
             <!-- BreadCrumb -->
-            <div class="breadcrumb">
-
-            </div>
+            <div class="breadcrumb"></div>
             <!-- End BreadCrumb -->
             <div class="columns">
                 <!-- Left Sidebar -->
@@ -41,11 +94,273 @@
                 <!-- Page Main -->
                 <div class="page-main">
                     <!-- Banner -->
-                    <div class="banner"></div>
+                    <div class="banner">
+                        <div class="container">
+                            <div class="banner-inner">
+                                <div class="col-banner image-banner">
+                                    <img src="img/banner1.jpg" alt="" />
+                                </div>
+                                <div class="col-banner info">
+                                    <img src="img/strength.jpg" alt="" />
+                                    <p class="p-bold">Strength</p>
+                                    <p class="p-info">
+                                        Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry.
+                                    </p>
+                                </div>
+                                <div class="col-banner image-banner">
+                                    <img src="img/banner3.jpg" alt="" />
+                                </div>
+                                <div class="col-banner info info-special">
+                                    <img src="img/icon_banner2.jpg" alt="" />
+                                    <p class="p-bold">dumbbells</p>
+                                    <p class="p-info">
+                                        Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry.
+                                    </p>
+                                </div>
+                                <div class="col-banner image-banner">
+                                    <img src="img/banner4.jpg" alt="" />
+                                </div>
+                                <div class="col-banner info">
+                                    <img src="img/icon_banner3.jpg" alt="" />
+                                    <p class="p-bold">power rack & cages</p>
+                                    <p class="p-info">
+                                        Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- End Banner -->
                     <!-- Top Selling -->
-                    <div class="top-selling"></div>
+                    <div class="top-selling">
+                        <div class="container">
+                            <div class="top-selling-inner">
+                                <div class="title">
+                                    <a class="title-detail special" href="#">Top Sellers</a>
+                                    <a class="title-detail" href="#">Featured</a>
+                                    <a class="title-detail" href="#">Most Reviews</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#" class="link-product">
+                                            <div class="col-inner">
+                                                <img src="img/product-1.png" alt="" />
+                                                <div class="product-icon">
+                                                    <a class="icon-detail" href="#"><i
+                                                            class="fas fa-shopping-basket"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-eye"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-heart"></i></a>
+                                                    <a class="icon-detail icon-last" href="#"><i
+                                                            class="fas fa-exchange-alt"></i></a>
+                                                </div>
+                                                <div class="product-letter">
+                                                    <a href="#">
+                                                        <p class="product-name">Body Champ Cardio</p>
+                                                    </a>
+                                                    <p class="product-price">$342.00</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="link-product">
+                                            <div class="col-inner">
+                                                <img src="img/product-2.png" alt="" />
+                                                <div class="product-icon">
+                                                    <a class="icon-detail" href="#"><i
+                                                            class="fas fa-shopping-basket"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-eye"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-heart"></i></a>
+                                                    <a class="icon-detail icon-last" href="#"><i
+                                                            class="fas fa-exchange-alt"></i></a>
+                                                </div>
+                                                <div class="product-letter">
+                                                    <a href="#">
+                                                        <p class="product-name">Body Solid GCEC340</p>
+                                                    </a>
+                                                    <p class="product-price">$214.00</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="link-product">
+                                            <div class="col-inner">
+                                                <img src="img/product-3.png" alt="" />
+                                                <div class="product-icon">
+                                                    <a class="icon-detail" href="#"><i
+                                                            class="fas fa-shopping-basket"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-eye"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-heart"></i></a>
+                                                    <a class="icon-detail icon-last" href="#"><i
+                                                            class="fas fa-exchange-alt"></i></a>
+                                                </div>
+                                                <div class="product-letter">
+                                                    <a href="#">
+                                                        <p class="product-name">Bowflex BXE116 Elliptical</p>
+                                                    </a>
+                                                    <p class="product-price">$421.00</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="link-product">
+                                            <div class="col-inner">
+                                                <img src="img/product-4.png" alt="" />
+                                                <div class="product-icon">
+                                                    <a class="icon-detail" href="#"><i
+                                                            class="fas fa-shopping-basket"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-eye"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-heart"></i></a>
+                                                    <a class="icon-detail icon-last" href="#"><i
+                                                            class="fas fa-exchange-alt"></i></a>
+                                                </div>
+                                                <div class="product-letter">
+                                                    <a href="#">
+                                                        <p class="product-name">ETHOS GHD</p>
+                                                    </a>
+                                                    <p class="product-price">$152.00</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="link-product">
+                                            <div class="col-inner">
+                                                <img src="img/product-5.png" alt="" />
+                                                <div class="product-icon">
+                                                    <a class="icon-detail" href="#"><i
+                                                            class="fas fa-shopping-basket"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-eye"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-heart"></i></a>
+                                                    <a class="icon-detail icon-last" href="#"><i
+                                                            class="fas fa-exchange-alt"></i></a>
+                                                </div>
+                                                <div class="product-letter">
+                                                    <a href="#">
+                                                        <p class="product-name">AFG Pro 7.2AI Incline</p>
+                                                    </a>
+                                                    <p class="product-price">$252.00</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="link-product">
+                                            <div class="col-inner">
+                                                <img src="img/product-6.png" alt="" />
+                                                <div class="product-icon">
+                                                    <a class="icon-detail" href="#"><i
+                                                            class="fas fa-shopping-basket"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-eye"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-heart"></i></a>
+                                                    <a class="icon-detail icon-last" href="#"><i
+                                                            class="fas fa-exchange-alt"></i></a>
+                                                </div>
+                                                <div class="product-letter">
+                                                    <a href="#">
+                                                        <p class="product-name">Weight Bench</p>
+                                                    </a>
+                                                    <p class="product-price">$412.00</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="link-product">
+                                            <div class="col-inner">
+                                                <img src="img/product-7.png" alt="" />
+                                                <div class="product-icon">
+                                                    <a class="icon-detail" href="#"><i
+                                                            class="fas fa-shopping-basket"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-eye"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-heart"></i></a>
+                                                    <a class="icon-detail icon-last" href="#"><i
+                                                            class="fas fa-exchange-alt"></i></a>
+                                                </div>
+                                                <div class="product-letter">
+                                                    <a href="#">
+                                                        <p class="product-name">ProForm Hiit Trainer Lite 5.9</p>
+                                                    </a>
+                                                    <p class="product-price">$300.00</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="link-product">
+                                            <div class="col-inner">
+                                                <img src="img/product-8.png" alt="" />
+                                                <div class="product-icon">
+                                                    <a class="icon-detail" href="#"><i
+                                                            class="fas fa-shopping-basket"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-eye"></i></a>
+                                                    <a class="icon-detail" href="#"><i class="fas fa-heart"></i></a>
+                                                    <a class="icon-detail icon-last" href="#"><i
+                                                            class="fas fa-exchange-alt"></i></a>
+                                                </div>
+                                                <div class="product-letter">
+                                                    <a href="#">
+                                                        <p class="product-name">Fitness Gear Pro</p>
+                                                    </a>
+                                                    <p class="product-price">$124.00</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- End Top Selling -->
+                    <!-- Feedback -->
+                    <div class="feedback">
+                        <div class="container">
+                            <div class="feedback-inner">
+                                <div class="feedback-detail">
+                                    <div class="title">See What They Said About Us</div>
+                                    <div class="img-center">
+                                        <img src="img/customer-said.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        “Good services. I bought a bicycle with a
+                                        wrong but they accepted free return for me and exchange a new product for me.
+                                    </div>
+                                    <div class="people-name">Lina</div>
+                                    <div class="congrulation">Happy clients</div>
+                                </div>
+                                <div class="feedback-detail">
+                                    <div class="title">See What They Said About Us</div>
+                                    <div class="img-center">
+                                        <img src="img/customer-said.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        “Good services. I bought a bicycle with a
+                                        wrong but they accepted free return for me and exchange a new product for me.
+                                    </div>
+                                    <div class="people-name">Lina</div>
+                                    <div class="congrulation">Happy clients</div>
+                                </div>
+                                <div class="feedback-detail">
+                                    <div class="title">See What They Said About Us</div>
+                                    <div class="img-center">
+                                        <img src="img/customer-said.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        “Good services. I bought a bicycle with a
+                                        wrong but they accepted free return for me and exchange a new product for me.
+                                    </div>
+                                    <div class="people-name">Lina</div>
+                                    <div class="congrulation">Happy clients</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Feedback -->
                     <!-- News -->
                     <div class="news"></div>
                     <!-- End News -->
@@ -57,15 +372,159 @@
                 <!-- Right Sidebar -->
                 <aside class="right-sidebar"></aside>
                 <!-- End Right Sidebar -->
+                <!-- Brand -->
+                <div class="brand">
+                    <div class="container">
+                        <div class="brand-inner">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="brand-detail b1">
+                                        <a href=""><img src="img/brand-1.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-detail b2">
+                                        <a href=""><img src="img/brand-2.png" alt=""></a>
+
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-detail b3">
+                                        <a href=""><img src="img/brand-3.png" alt=""></a>
+
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-detail b4">
+                                        <a href=""><img src="img/brand-4.png" alt=""></a>
+
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-detail b5">
+                                        <a href=""><img src="img/brand-5.png" alt=""></a>
+
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-detail b6">
+                                        <a href=""><img src="img/brand-6.png" alt=""></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Brand -->
             </div>
         </div>
         <!-- End Main Content -->
         <!-- Footer -->
         <footer class="footer">
-
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top-inner">
+                        <div class="info-company">
+                            <div class="logo">
+                                <a href="#"><img src="img/logo.png" alt=""></a>
+                            </div>
+                            <div class="info-content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                            </div>
+                            <div class="info-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="info-link">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="col-inner">
+                                        <div class="title">Contact us</div>
+                                        <div class="detail">
+                                            <ul>
+                                                <li><i class="fas fa-map-marker-alt"></i><a href="">200 Lincoln Ave,
+                                                        Salinas, CA 93901</a></li>
+                                                <li><i style="margin-right: 12px;" class="fas fa-phone"></i><a href="">023 32423 223</a></li>
+                                                <li><i style="margin-right: 16px;" class="fas fa-envelope"></i><a href="">gymax@example.com</a></li>
+                                                <li><i style="margin-right: 16px;" class="fas fa-clock"></i><a href="">9:00 - 20:00 All day</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="col-inner">
+                                        <div class="title">My Account</div>
+                                        <div class="detail">
+                                            <ul>
+                                                <li><a href="#">My account</a></li>
+                                                <li><a href="#">check out</a></li>
+                                                <li><a href="#">register</a></li>
+                                                <li><a href="#">Login</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="col-inner">
+                                        <div class="title">Information</div>
+                                        <div class="detail">
+                                            <ul>
+                                                <li><a href="#">About us</a></li>
+                                                <li><a href="#">Contact us</a></li>
+                                                <li><a href="#">Terms of user</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="col-inner">
+                                        <div class="title">Quick link</div>
+                                        <div class="detail">
+                                            <ul>
+                                                <li><a href="#">New user</a></li>
+                                                <li><a href="#">Help center</a></li>
+                                                <li><a href="#">Report spam</a></li>
+                                                <li><a href="#">FAQs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Copyright © 2019 Gymax - Design by ArrowHitech - All Rights Reserved
+            </div>
         </footer>
         <!-- End Footer -->
     </div>
+    <script>
+        $(document).ready(function () {
+            $('.feedback-inner').slick({
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 1920,
+                        settings: {
+                            arrows: false,
+                            // centerMode: true,
+                            // centerPadding: '40px',
+                            // slidesToShow: 3
+                        }
+                    },
+                ]
+            })
+        });
+    </script>
 </body>
 
 </html>

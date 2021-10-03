@@ -1,0 +1,91 @@
+.footer {
+    margin-bottom: 500px;
+    .footer-top {
+        padding-top: 100px;
+        background-color: #222;
+        &-inner {
+            .info-company {
+                text-align: center;
+                padding-bottom: 54px;
+                border-bottom: 1px solid #444;
+                .logo {
+                    margin-bottom: 29px;
+                }
+                .info-content {
+                    color: @main-letter;
+                    font-size: 14px;
+                    font-weight: 400;
+                    max-width: 715px;
+                    margin: auto;
+                    margin-bottom: 42px;
+                    padding-left: 4px;
+
+                }
+                .info-social {
+                    width: 208px;
+                    .flex();
+                    margin: auto;
+                    font-size: 17px;
+                    padding-left: 10px;
+                    a {
+                        color: @main-letter;
+                    }
+                    a:hover {
+                        color: @main-hover;
+                    }
+                }
+            }
+            .info-link {
+                padding-top: 72px;
+                padding-bottom: 30px;
+                .col {
+                    width: 25%;
+                    padding: 0 15px;
+                    box-sizing: border-box;
+                    &-inner {
+                        .title {
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: @main-white;
+                            margin-bottom: 25px;
+                            text-transform: uppercase;
+                        }
+                        .detail {
+                            ul {
+                                li {
+                                    margin-bottom: 17px;
+                                    i {
+                                        vertical-align: middle;
+                                        margin-right: 20px;
+                                        font-size: 14px;
+                                        padding-bottom: 4px;
+                                        color: @main-letter;
+                                    }
+                                    a {
+                                        color: @main-letter;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        letter-spacing: -0.01em;
+                                    }
+                                    a:hover {
+                                        color: @main-hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        color: @main-letter;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        background-color: #111;
+        min-height: 50px;
+        line-height: 50px;
+        padding: 0 15px;
+    }
+}
