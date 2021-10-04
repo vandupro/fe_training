@@ -174,21 +174,21 @@ body {
   color: #fff;
   z-index: 2;
 }
-.header-content-inner {
-  width: 523px;
+.header-content .container-header .header-content-inner {
+  max-width: 523px;
 }
-.header-content-inner .content1 {
+.header-content .container-header .header-content-inner .content1 {
   font-size: 60px;
   font-weight: 700;
   margin-left: -3px;
 }
-.header-content-inner .content2 {
+.header-content .container-header .header-content-inner .content2 {
   font-size: 40px;
   font-weight: 700;
   margin-top: -7px;
   margin-left: -4px;
 }
-.header-content-inner .content3 {
+.header-content .container-header .header-content-inner .content3 {
   font-size: 14px;
   font-weight: 400;
   margin-top: 23px;
@@ -196,7 +196,7 @@ body {
   margin-left: -1px;
   padding-top: 1px;
 }
-.header-content-inner .btn {
+.header-content .container-header .header-content-inner .btn {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -213,7 +213,7 @@ body {
   -ms-transition: all, 0.5s;
   -o-transition: all, 0.5s;
 }
-.header-content-inner .btn:hover {
+.header-content .container-header .header-content-inner .btn:hover {
   background-color: #dd2f31;
 }
 .main-content .columns .page-main .banner {
@@ -447,9 +447,6 @@ body {
 .main-content .columns .brand .brand-inner .row .col .b6 {
   padding: 4px 18px;
 }
-.footer {
-  margin-bottom: 500px;
-}
 .footer .footer-top {
   padding-top: 100px;
   background-color: #222;
@@ -488,7 +485,7 @@ body {
 }
 .footer .footer-top-inner .info-link {
   padding-top: 72px;
-  padding-bottom: 30px;
+  padding-bottom: 39px;
 }
 .footer .footer-top-inner .info-link .col {
   width: 25%;
@@ -499,17 +496,18 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   text-transform: uppercase;
 }
 .footer .footer-top-inner .info-link .col-inner .detail ul li {
-  margin-bottom: 17px;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 400;
 }
 .footer .footer-top-inner .info-link .col-inner .detail ul li i {
   vertical-align: middle;
   margin-right: 20px;
   font-size: 14px;
-  padding-bottom: 4px;
   color: #777;
 }
 .footer .footer-top-inner .info-link .col-inner .detail ul li a {
@@ -530,6 +528,7 @@ body {
   min-height: 50px;
   line-height: 50px;
   padding: 0 15px;
+  letter-spacing: -0.01em;
 }
 @media all and (max-width: 1600px) {
   .header-content {
@@ -590,13 +589,13 @@ body {
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
   }
-  .header-content {
-    left: 30px;
+  .header-content .container-header {
+    padding-left: 45px;
   }
-  .header-content-inner .content1 {
+  .header-content .container-header .header-content-inner .content1 {
     font-size: 45px;
   }
-  .header-content-inner .content2 {
+  .header-content .container-header .header-content-inner .content2 {
     font-size: 30px;
   }
   .main-content .columns .page-main .banner {
@@ -616,20 +615,20 @@ body {
   .header .logo {
     height: 50px;
   }
-  .header-content-inner {
-    width: 427px;
+  .header-content .container-header .header-content-inner {
+    max-width: 427px;
   }
-  .header-content-inner .content1 {
+  .header-content .container-header .header-content-inner .content1 {
     font-size: 35px;
   }
-  .header-content-inner .content2 {
+  .header-content .container-header .header-content-inner .content2 {
     font-size: 25px;
   }
-  .header-content-inner .content3 {
+  .header-content .container-header .header-content-inner .content3 {
     margin-top: 15px;
     padding-bottom: 35px;
   }
-  .header-content-inner .btn {
+  .header-content .container-header .header-content-inner .btn {
     width: 150px;
     height: 40px;
     line-height: 40px;
@@ -642,7 +641,6 @@ body {
   }
   .main-content .columns .page-main .top-selling .row .col .col-inner {
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-    border: 1px solid #f0ecec;
   }
   .main-content .columns .page-main .top-selling .row .col .col-inner .product-icon {
     display: block;
@@ -655,7 +653,9 @@ body {
   }
   .footer .footer-top-inner .info-link .col {
     width: 40%;
-    transform: translateX(50%);
+  }
+  .footer-top-inner .info-link .row {
+    justify-content: space-around;
   }
 }
 @media all and (max-width: 768px) {
@@ -677,21 +677,21 @@ body {
     -o-transform: translateX(-150%);
     width: 48vw;
   }
-  .header-content-inner {
-    width: 427px;
+  .header-content .container-header .header-content-inner {
+    max-width: 427px;
   }
-  .header-content-inner .content1 {
+  .header-content .container-header .header-content-inner .content1 {
     font-size: 20px;
     margin-bottom: 5px;
   }
-  .header-content-inner .content2 {
+  .header-content .container-header .header-content-inner .content2 {
     font-size: 16px;
   }
-  .header-content-inner .content3 {
+  .header-content .container-header .header-content-inner .content3 {
     margin-top: 10px;
     padding-bottom: 15px;
   }
-  .header-content-inner .btn {
+  .header-content .container-header .header-content-inner .btn {
     width: 130px;
     height: 30px;
     line-height: 30px;
@@ -724,15 +724,15 @@ body {
     -o-transform: translateX(-150%);
     width: 50vw;
   }
-  .header-content .content1 {
+  .header-content .container-header .header-content-inner .content1 {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
   }
-  .header-content .content3 {
+  .header-content .container-header .header-content-inner .content3 {
     display: none;
   }
-  .header-content .btn {
+  .header-content .container-header .header-content-inner .btn {
     margin-top: 15px;
     width: 80px;
     height: 25px;
@@ -754,8 +754,7 @@ body {
     padding: 10px;
   }
   .footer .footer-top-inner .info-link .col {
-    width: 100%;
-    transform: translateX(10%);
+    width: 80%;
   }
   .footer .footer-bottom {
     line-height: 30px;
@@ -765,11 +764,11 @@ body {
   .header .menu-inner .navbar ul {
     width: 56vw;
   }
-  .header-content .content1 {
+  .header-content .container-header .header-content-inner .content1 {
     margin-top: 15px;
     font-size: 16px;
   }
-  .header-content .btn {
+  .header-content .container-header .header-content-inner .btn {
     margin-top: 15px;
     width: 80px;
     height: 25px;
